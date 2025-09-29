@@ -2,12 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ValueProposition from "@/components/ValueProposition";
 import ForCustomers from "@/components/ForCustomers";
-import ComparisonTable from "@/components/ComparisonTable";
-import Security from "@/components/Security";
-import Testimonials from "@/components/Testimonials";
-import FAQ from "@/components/FAQ";
-import CTABanner from "@/components/CTABanner";
-import Footer from "@/components/Footer";
+// Removed sections from ComparisonTable onwards per request
 
 const Index = () => {
   return (
@@ -17,13 +12,9 @@ const Index = () => {
         <Hero />
         <ValueProposition />
         <ForCustomers />
-        <ComparisonTable />
-        <Security />
-        <Testimonials />
-        <FAQ />
-        <CTABanner />
+        {/* Sections beyond this point intentionally removed */}
       </main>
-      <Footer />
+      {/* Footer intentionally removed */}
     </div>
   );
 };
