@@ -2,41 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Fintech Landing Page Design System - Clean, Professional, Modern */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 @layer base {
   :root {
+    /* Base colors - White/Charcoal foundation */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 215 25% 15%;
+    --charcoal: 220 15% 20%;
+    --charcoal-light: 218 12% 35%;
+    
+    /* Deep blue brand colors */
+    --primary: 215 85% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 215 90% 25%;
+    --primary-light: 215 75% 55%;
+    
+    /* Card and surface colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --card-foreground: 215 25% 15%;
+    --surface: 220 15% 98%;
+    --surface-muted: 218 10% 95%;
+    
+    /* Gradient highlights */
+    --gradient-primary: linear-gradient(135deg, hsl(215 85% 35%), hsl(215 75% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 85% 35%), hsl(215 75% 55%), hsl(200 70% 65%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(220 15% 98%));
+    
+    /* Interactive states */
+    --secondary: 218 10% 95%;
+    --secondary-foreground: 215 25% 15%;
+    --muted: 218 10% 92%;
+    --muted-foreground: 218 12% 45%;
+    --accent: 215 75% 55%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Borders and inputs */
+    --border: 218 15% 88%;
+    --input: 218 15% 88%;
+    --ring: 215 85% 35%;
+    
+    /* Success and trust indicators */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --trust: 200 70% 45%;
+    --trust-foreground: 0 0% 100%;
+    
+    /* Shadows */
+    --shadow-card: 0 4px 6px -1px hsl(215 25% 15% / 0.1), 0 2px 4px -1px hsl(215 25% 15% / 0.06);
+    --shadow-feature: 0 10px 25px -3px hsl(215 25% 15% / 0.1), 0 4px 6px -2px hsl(215 25% 15% / 0.05);
+    --shadow-hero: 0 20px 50px -12px hsl(215 85% 35% / 0.25);
+    
+    /* Border radius */
+    --radius: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +126,75 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+  
+  /* Typography scale */
+  .heading-xl {
+    @apply text-5xl font-bold tracking-tight leading-tight;
+  }
+  
+  .heading-lg {
+    @apply text-4xl font-bold tracking-tight leading-tight;
+  }
+  
+  .heading-md {
+    @apply text-3xl font-semibold tracking-tight;
+  }
+  
+  .heading-sm {
+    @apply text-2xl font-semibold tracking-tight;
+  }
+  
+  .body-lg {
+    @apply text-xl font-medium leading-relaxed;
+  }
+  
+  .body-base {
+    @apply text-base font-normal leading-relaxed;
+  }
+  
+  /* Component utilities */
+  .card-surface {
+    @apply bg-card border border-border shadow-[var(--shadow-card)] rounded-[var(--radius-lg)];
+  }
+  
+  .feature-card {
+    @apply bg-card border border-border shadow-[var(--shadow-feature)] rounded-[var(--radius-xl)] transition-[var(--transition-smooth)] hover:shadow-[var(--shadow-hero)];
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  /* Animations */
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  .slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 }
