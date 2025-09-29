@@ -1,10 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import TrustRow from "@/components/TrustRow";
 import ValueProposition from "@/components/ValueProposition";
-import HowItWorks from "@/components/HowItWorks";
 import ForCustomers from "@/components/ForCustomers";
-import Corridors from "@/components/Corridors";
 import ComparisonTable from "@/components/ComparisonTable";
 import Security from "@/components/Security";
 import Testimonials from "@/components/Testimonials";
@@ -18,11 +15,8 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <TrustRow />
         <ValueProposition />
-        <HowItWorks />
         <ForCustomers />
-        <Corridors />
         <ComparisonTable />
         <Security />
         <Testimonials />

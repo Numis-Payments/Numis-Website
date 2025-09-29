@@ -22,7 +22,7 @@ const ComparisonTable = () => {
             Compare <span className="gradient-text">payment methods</span>
           </h2>
           <p className="body-lg text-charcoal-light max-w-3xl mx-auto">
-            See how TradeFlow stacks up against traditional payment methods. 
+            See how Numis stacks up against traditional payment methods. 
             Modern infrastructure delivers better results across every metric.
           </p>
         </div>
@@ -34,7 +34,7 @@ const ComparisonTable = () => {
               <div className="font-semibold text-charcoal">Features</div>
               <div className="text-center">
                 <div className="font-semibold text-primary">Our Rail</div>
-                <div className="text-xs text-muted-foreground mt-1">TradeFlow</div>
+                <div className="text-xs text-muted-foreground mt-1">Numis</div>
               </div>
               <div className="text-center">
                 <div className="font-semibold text-charcoal">Bank SWIFT</div>

@@ -27,7 +27,7 @@ const ValueProposition = () => {
       <div className="container px-4">
         <div className="text-center mb-16 space-y-4">
           <h2 className="heading-lg text-charcoal">
-            Why choose <span className="gradient-text">TradeFlow</span>?
+            Why choose <span className="gradient-text">Numis</span>?
           </h2>
           <p className="body-lg text-charcoal-light max-w-3xl mx-auto">
             Stop losing time and money on outdated payment rails. Our modern infrastructure 

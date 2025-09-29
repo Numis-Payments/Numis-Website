@@ -10,18 +10,16 @@ const Hero = () => {
           <div className="space-y-8 fade-in-up">
             <div className="space-y-4">
               <h1 className="heading-xl text-charcoal leading-tight">
-                Instant, compliant trade payouts.{" "}
                 <span className="gradient-text">
-                  Fiat on the surface—faster rails underneath.
+                  Instant, compliant cross-border payments
                 </span>
               </h1>
               <p className="body-lg text-charcoal-light max-w-2xl">
-                Exporters get same-day local payments (PIX/NGN/INR) with standard bank/FX documentation. 
-                Importers pay USD; we move value via stablecoins in the backend. No wallets. No SWIFT delays.
+                Get same-day local payments with standard bank documentation. Simple USD payments in, local currency payouts out. No wallets, no delays.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex justify-center sm:justify-start">
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 shadow-[var(--shadow-hero)] text-lg px-8"
@@ -29,29 +27,21 @@ const Hero = () => {
                 Book a 20-min Pilot Call
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="text-lg px-8 border-charcoal-light text-charcoal hover:bg-surface"
-              >
-                <Play className="mr-2 h-5 w-5" />
-                How It Works
-              </Button>
             </div>
 
             <div className="pt-4">
               <p className="text-sm text-muted-foreground mb-3">
-                Trusted by exporters and importers across 3 live corridors
+                Trusted by financial institutions worldwide
               </p>
               <div className="flex items-center space-x-6">
                 <div className="px-3 py-1 bg-success/10 text-success text-xs font-medium rounded-full">
-                  US ↔ Brazil (PIX)
+                  Bank-grade security
                 </div>
                 <div className="px-3 py-1 bg-success/10 text-success text-xs font-medium rounded-full">
-                  US ↔ Nigeria (NGN)
+                  Regulatory compliant
                 </div>
                 <div className="px-3 py-1 bg-success/10 text-success text-xs font-medium rounded-full">
-                  UAE ↔ India (INR)
+                  Same-day settlement
                 </div>
               </div>
             </div>
@@ -66,7 +56,7 @@ const Hero = () => {
               />
               <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-lg border">
                 <span className="text-xs font-medium text-charcoal-light">
-                  🔒 Stablecoin-powered backend
+                  🏦 Bank-grade infrastructure
                 </span>
               </div>
             </div>

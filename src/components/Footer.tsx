@@ -9,8 +9,8 @@ const Footer = () => {
   ];
 
   const productLinks = [
-    { name: "How It Works", href: "#how-it-works" },
-    { name: "Corridors", href: "#corridors" },
+    { name: "Features", href: "#value-proposition" },
+    { name: "Solutions", href: "#for-customers" },
     { name: "Pricing", href: "#pricing" },
     { name: "Security", href: "#security" }
   ];
@@ -30,13 +30,13 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
               <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">TF</span>
+                <span className="text-white font-bold text-sm">N</span>
               </div>
-              <span className="font-bold text-xl">TradeFlow</span>
+              <span className="font-bold text-xl">Numis</span>
             </div>
             
             <p className="text-gray-300 mb-6 max-w-md">
-              Instant, compliant cross-border trade payouts. Fiat on the surface—faster rails underneath.
+              Instant, compliant cross-border payments with same-day settlement and standard bank documentation.
             </p>
             
             <div className="space-y-3">
@@ -46,7 +46,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-gray-400" />
-                <span className="text-sm text-gray-300">hello@tradeflow.com</span>
+                <span className="text-sm text-gray-300">hello@numis.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-gray-400" />
@@ -107,7 +107,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-400">
-              © 2024 TradeFlow. All rights reserved.
+              © 2024 Numis. All rights reserved.
             </p>
             
             <div className="flex space-x-6 mt-4 md:mt-0">

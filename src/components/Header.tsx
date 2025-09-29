@@ -10,18 +10,18 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center space-x-2">
           <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-sm">TF</span>
+            <span className="text-white font-bold text-sm">N</span>
           </div>
-          <span className="font-bold text-xl text-charcoal">TradeFlow</span>
+          <span className="font-bold text-xl text-charcoal">Numis</span>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#how-it-works" className="text-muted-foreground hover:text-primary transition-colors">
-            How It Works
+          <a href="#value-proposition" className="text-muted-foreground hover:text-primary transition-colors">
+            Features
           </a>
-          <a href="#corridors" className="text-muted-foreground hover:text-primary transition-colors">
-            Corridors
+          <a href="#for-customers" className="text-muted-foreground hover:text-primary transition-colors">
+            Solutions
           </a>
           <a href="#pricing" className="text-muted-foreground hover:text-primary transition-colors">
             Pricing
@@ -57,11 +57,11 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden border-t border-border bg-background">
           <nav className="container py-4 space-y-3">
-            <a href="#how-it-works" className="block py-2 text-muted-foreground hover:text-primary">
-              How It Works
+            <a href="#value-proposition" className="block py-2 text-muted-foreground hover:text-primary">
+              Features
             </a>
-            <a href="#corridors" className="block py-2 text-muted-foreground hover:text-primary">
-              Corridors
+            <a href="#for-customers" className="block py-2 text-muted-foreground hover:text-primary">
+              Solutions
             </a>
             <a href="#pricing" className="block py-2 text-muted-foreground hover:text-primary">
               Pricing
