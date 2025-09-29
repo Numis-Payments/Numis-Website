@@ -14,8 +14,8 @@ const Security = () => {
     },
     {
       icon: Globe,
-      title: "Travel Rule Compliance",
-      description: "Backend compliance with international cryptocurrency travel rule requirements"
+      title: "International Compliance",
+      description: "Full compliance with international banking and anti-money laundering requirements"
     },
     {
       icon: FileCheck,

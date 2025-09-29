@@ -8,8 +8,8 @@ import {
 const FAQ = () => {
   const faqs = [
     {
-      question: "Do I need to use cryptocurrency?",
-      answer: "No. Our platform provides a pure fiat experience. While we use stablecoins in the backend for faster settlement, your teams never need to interact with crypto wallets, private keys, or blockchain interfaces. Everything appears as standard bank transfers with familiar documentation."
+      question: "Do I need special technology or wallets?",
+      answer: "No. Our platform provides a pure fiat banking experience. Everything appears as standard bank transfers with familiar documentation. Your teams use the same processes they're already comfortable with."
     },
     {
       question: "How do you handle compliance documentation?",

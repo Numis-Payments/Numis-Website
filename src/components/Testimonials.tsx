@@ -10,7 +10,7 @@ const Testimonials = () => {
       flag: "🇧🇷"
     },
     {
-      quote: "Finally, NGN payments that actually work. Standard banking docs, no crypto complexity.",
+      quote: "Finally, NGN payments that actually work. Standard banking docs, seamless process.",
       author: "Adebayo Okafor", 
       company: "Lagos Trading Co",
       country: "Nigeria",
