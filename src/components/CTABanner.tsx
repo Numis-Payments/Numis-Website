@@ -18,14 +18,16 @@ const CTABanner = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button 
-                  size="lg" 
-                  className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 shadow-[var(--shadow-hero)] text-lg px-8"
-                >
-                  <Calendar className="mr-2 h-5 w-5" />
-                  Book Pilot Call
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+                <a href="https://calendly.com/varun_nair/30min" target="_blank" rel="noopener noreferrer">
+                  <Button 
+                    size="lg" 
+                    className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 shadow-[var(--shadow-hero)] text-lg px-8"
+                  >
+                    <Calendar className="mr-2 h-5 w-5" />
+                    Book Pilot Call
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </a>
                 
                 <Button 
                   variant="outline" 

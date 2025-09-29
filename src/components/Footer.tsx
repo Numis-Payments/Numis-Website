@@ -1,4 +1,4 @@
-import { MapPin, Mail, Phone } from "lucide-react";
+import { MapPin, Mail } from "lucide-react";
 
 const Footer = () => {
   const companyLinks = [
@@ -29,9 +29,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">N</span>
-              </div>
+              <img src="/logo.svg" alt="Numis logo" className="w-8 h-8" />
               <span className="font-bold text-xl">Numis</span>
             </div>
             
@@ -42,16 +40,13 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-gray-400" />
-                <span className="text-sm text-gray-300">San Francisco, CA & Singapore</span>
+                <span className="text-sm text-gray-300">1400 Jones St</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-gray-400" />
-                <span className="text-sm text-gray-300">hello@numis.com</span>
+                <span className="text-sm text-gray-300">hello@paynumis.com</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="h-4 w-4 text-gray-400" />
-                <span className="text-sm text-gray-300">+1 (555) 123-4567</span>
-              </div>
+              
             </div>
           </div>
 
