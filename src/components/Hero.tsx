@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
+import { useState } from "react";
 import heroGlobe from "@/assets/hero-globe.png";
 
 const Hero = () => {
+  const [imgSrc, setImgSrc] = useState<string>("/hero-new.jpg");
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-background via-surface to-surface-muted">
       <div className="container px-4 py-20 md:py-28">
@@ -50,11 +53,13 @@ const Hero = () => {
           </div>
 
           <div className="relative slide-in-right">
-            <div className="relative">
+            <div className="relative aspect-[4/3] md:aspect-[16/9]">
               <img 
-                src={heroGlobe} 
-                alt="Global trade routes visualization showing connected corridors between US-Brazil, US-Nigeria, and UAE-India with local payment methods PIX, NGN, and INR" 
-                className="w-full h-auto rounded-2xl shadow-[var(--shadow-hero)]"
+                src={imgSrc}
+                onError={() => setImgSrc(heroGlobe)}
+                alt="Blue globe with highlighted payment corridors in EMEA and APAC"
+                loading="eager"
+                className="absolute inset-0 w-full h-full object-cover object-center rounded-2xl shadow-[var(--shadow-hero)]"
               />
               <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-lg border">
                 <span className="text-xs font-medium text-charcoal-light">
